@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# ignore the html files
+/docs/
+
+# Ignore Mac stuff
+.DS_Store
