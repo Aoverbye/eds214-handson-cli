@@ -1,4 +1,4 @@
-# EDS-214: Introduction to the Command Line and bash
+# EDS-214: Introduction to the Command Line Interface (CLI) and bash
 
 1. Why should I care? I know R
 2. Navigating and manipulating files
