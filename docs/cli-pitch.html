@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Untitled</title>
+<title>The Command Line Interface is powerful</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,16 +57,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="Untitled_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Untitled_files/libs/quarto-html/quarto.js"></script>
-<script src="Untitled_files/libs/quarto-html/popper.min.js"></script>
-<script src="Untitled_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="Untitled_files/libs/quarto-html/anchor.min.js"></script>
-<link href="Untitled_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Untitled_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="Untitled_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="Untitled_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Untitled_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="cli-pitch_files/libs/clipboard/clipboard.min.js"></script>
+<script src="cli-pitch_files/libs/quarto-html/quarto.js"></script>
+<script src="cli-pitch_files/libs/quarto-html/popper.min.js"></script>
+<script src="cli-pitch_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="cli-pitch_files/libs/quarto-html/anchor.min.js"></script>
+<link href="cli-pitch_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="cli-pitch_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="cli-pitch_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="cli-pitch_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="cli-pitch_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -79,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Untitled</h1>
+<h1 class="title">The Command Line Interface is powerful</h1>
 </div>
 
 
@@ -94,19 +94,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<section id="a-little-bit-of-terminology" class="level2">
+<h2 class="anchored" data-anchor-id="a-little-bit-of-terminology">A little bit of terminology</h2>
+<ul>
+<li><code>Command Line Interface (CLI)</code>: This is a user interface that lets you interact with a computer. It is a legacy from the early days of computers. Now a days computers have graphical user interfaces instead (MacOSX, Windows, Linux, …)</li>
+<li><code>Terminal</code>: It is a an application that lets you run a command line interface. It used to be a physical machine connected to a mainframe computer</li>
+<li><code>Shell</code>: It is the program that runs the command line. There are many different shells, the most common (an default on most system) being <code>bash</code> (Bourne Again SHell)</li>
+</ul>
+</section>
+<section id="why-should-i-learn-about-bash" class="level2">
+<h2 class="anchored" data-anchor-id="why-should-i-learn-about-bash">Why should I learn about bash !?</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># got to you home directory</span></span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clone this repository</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># create the new directory</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> cli_intro</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># go inside it</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> cli_intro</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> Github</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> Github</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone <span class="st">"https://github.com/brunj7/eds214-handson-cli.git"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> eds214-handson-cli</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> babynamesbystate</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the qmd from GitHub</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://raw.githubusercontent.com/brunj7/eds214-handson-cli/main/cli_handson-files.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Do I have all the states?</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="pp">*</span>.TXT</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="pp">*</span>.TXT <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the files</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span> CA.TXT</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span> CA.TXT</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Concatenate the files</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> baby_allstates.csv     <span class="co"># create an empty file</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"state, gender, year, firstname, count"</span> <span class="op">&gt;</span> baby_allstates.csv  <span class="co"># add the header to the file</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="pp">*</span>.TXT <span class="op">&gt;&gt;</span> baby_allstates.csv    <span class="co"># append the content of the files to the csv file</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><strong><em>Try to do this in R!!</em></strong></p>
+<hr>
+<p>Back to main <a href="https://github.com/brunj7/eds214-handson-cli">Repo</a></p>
+</section>
 
 </main>
 <!-- /main column -->
