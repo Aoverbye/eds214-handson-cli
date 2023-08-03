@@ -1,0 +1,41 @@
+---
+title: "The Command Line Interface is powerful"
+---
+
+## A little bit of terminology
+
+
+- `Command Line Interface (CLI)`: This is a user interface that lets you interact with a computer. It is a legacy from the early days of computers. Now a days computers have graphical user interfaces instead (MacOSX, Windows, Linux, ...) 
+- `Terminal`: It is a an application that lets you run a command line interface. It used to be a physical machine connected to a mainframe computer
+- `Shell`: It is the program that runs the command line. Thera are many different shells, the most common (an default on most system) being `bash` (Bourne Again SHell)
+
+
+## Why should I learn about bash !?
+
+```{bash}
+# Clone this repository
+cd ~
+mkdir Github
+cd Github
+git clone "https://github.com/brunj7/eds214-handson-cli.git"
+cd eds214-handson-cli
+cd babynamesbystate
+pwd
+
+
+# Do I have all the states?
+ls *.TXT
+ls *.TXT | wc -l
+
+# Look at the files
+head CA.TXT
+tail CA.TXT
+
+# Concatenate the files
+touch baby_allstates.csv     # create an empty file
+echo "state, gender, year, firstname, count" > baby_allstates.csv  # add the header to the file
+cat *.TXT >> baby_allstates.csv    # append the content of the files to the csv file
+```
+
+
+***Try to do this in R!!***
