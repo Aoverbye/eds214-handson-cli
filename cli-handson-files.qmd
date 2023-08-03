@@ -1,0 +1,149 @@
+---
+title: "Practicing CLI"
+engine: knitr
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Files and directories
+
+In the following code examples, you need to type the command, but not include 
+the command prompt (e.g., `brun@taylor:~$`) which just shows that the computer 
+is ready to accept a command.
+
+### Setup
+
+Let's start by downloading the quarto document from GitHub so you can save your commands in it:
+
+- create a `cli_intro` directory in your home directory on Taylor
+- download the qmd file 
+
+
+```{bash, eval=FALSE, echo=TRUE}
+# got to you home directory
+cd ~
+
+# create the new directory
+mkdir cli_intro
+
+# go inside it
+cd cli_intro
+
+# Download the qmd from GitHub
+wget https://raw.githubusercontent.com/brunj7/eds214-handson-cli/main/cli_handson-files.qmd
+```
+
+
+Let's keep going!!
+
+- create a `README.md` file inside the `cli_intro` directory & add the following title: `# Tutorial files related to CLI` to it (check out `echo`)
+  - Hint: you can do this in one line!
+- Show the contents of that file using `cat` (concatenate)
+
+```{bash, eval=FALSE, echo=TRUE}
+# brun@taylor:~$ cd ~/cli_intro
+
+```
+
+### A little more file manipulations
+
+
+#### Get a file from a remote server
+
+- download the file `10min-loop.R` to your home directory on Taylor
+- create directory `code` inside your `cli_intro` folder
+- move `mv` this file to your `cli_intro` directory
+- list the files in the directory with `ls` (list)
+- look where we are in the filesystem using `pwd` (print working directory)
+- get an overview of the directory contents using `tree`
+
+```{bash, eval=FALSE, echo=TRUE}
+# brun@taylor:~$ cd ~
+# brun@taylor:~$ wget https://aurora.nceas.ucsb.edu/~brun/10min-loop.R
+
+```
+
+
+
+#### Try with a folder: 
+
+- download the data to Taylor from https://aurora.nceas.ucsb.edu/~brun/sampledata.zip
+- unzip the folder
+
+```{bash, eval=FALSE, echo=TRUE}
+# brun@taylor:~$ cd ~/cli_intro
+# brun@taylor:~/cli_intro$ wget https://aurora.nceas.ucsb.edu/~brun/sampledata.zip
+# brun@taylor:~/cli_intro$ ls
+# brun@taylor:~/cli_intro$ unzip sampledata.zip .
+# brun@taylor:~/cli_intro$ tree .
+
+```
+
+
+
+
+
+Your should end up with something like this:
+
+```bash
+# brun@taylor:~/cli_intro$ tree
+.
+├── code
+│   └── 10min-loop.R
+├── README.md
+└── sampledata
+    ├── paleo-mammals.txt
+    ├── paleo-mammals-v2.txt
+    ├── paleo-mammals-v3.txt
+    ├── stem.csv
+    └── tree.csv
+
+2 directories, 7 files
+```
+
+
+### Your turn
+
+Now, let's organize those data!!
+
+- create a new directory `data` in the `cli_intro` directory
+- move the `sampledata` directory inside the `data` directory
+- create two directories `mammals` and `plots` inside the `data` directory
+- move using `cp` to copy all the mammals files from the `sampledata` folder to the `mammals` subdirectory; hint: you can use the wildcard `*`
+- move using `mv` the other files files from the `sampledata` folder to the `plots` subdirectory
+- double check it is done using `cd` and `ls`
+- remove `rm` the  `sampledata` directory; hint: `rmdir` can only remove empty directories
+
+Your should end up with something like this:
+
+```bash
+# brun@taylor:~/cli_intro$ tree
+.
+├── code
+│   └── 10min-loop.R
+├── data
+│   ├── mammals
+│   │   ├── paleo-mammals.txt
+│   │   ├── paleo-mammals-v2.txt
+│   │   └── paleo-mammals-v3.txt
+│   └── plots
+│       ├── stem.csv
+│       └── tree.csv
+└── README.md
+
+4 directories, 7 files
+
+```
+
+
+### Bonus
+
+- add a text file `data_listing.txt` in the `data` folder that lists all the files in it
+
+
+
+## Aknowledgements
+
+Adapted from Matt Jones, OSS 2017, https://github.com/NCEAS/oss-lessons
+

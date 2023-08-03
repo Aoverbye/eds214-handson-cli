@@ -8,3 +8,5 @@
 
 # Ignore Mac stuff
 .DS_Store
+
+/.quarto/
