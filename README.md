@@ -1,7 +1,7 @@
 # EDS-214: Introduction to the Command Line Interface (CLI) and bash
 
-1. Why should I care? I know R
-2. Navigating and manipulating files
+1. Why should I care? I know R.. [the pitch](cli-pitch.html)
+2. Navigating and manipulating files [practice](cli-hanson-files.html)
 3. A little more about the cool stuff you can do
 
 
