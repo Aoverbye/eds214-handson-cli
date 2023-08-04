@@ -85,8 +85,6 @@ Let's keep going!!
 
 
 
-
-
 Your should end up with something like this:
 
 ```bash
@@ -143,8 +141,15 @@ Your should end up with something like this:
 ### Bonuses
 
 - add a text file `data_listing.txt` in the `data` folder that lists all the files in it
-- add a text file `
+- add a text file `nb_lines_listing.txt` in the `data` folder that counts the number of lines in each files and orders the files with highest being first
+- can you make the `cli-intro` a git repository?
 
+
+BTW, do you wonder what are the differences between the various mammals files?
+
+```bash
+diff paleo-mammals.txt paleo-mammals-v2.txt
+```
 
 
 ## Aknowledgements
