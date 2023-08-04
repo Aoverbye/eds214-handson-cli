@@ -16,8 +16,8 @@ engine: knitr
 ```{bash, eval=FALSE, echo=TRUE}
 # Clone this repository
 cd ~
-mkdir Github
-cd Github
+mkdir github
+cd github
 git clone "https://github.com/brunj7/eds214-handson-cli.git"
 cd eds214-handson-cli
 ls
