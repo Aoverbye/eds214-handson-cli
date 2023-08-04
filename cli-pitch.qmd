@@ -38,10 +38,8 @@ cat *.TXT >> baby_allstates.csv    # append the content of the files to the csv 
 ```
 
 
-***Try to do this in R!!***
 
-
-Well,  did you know you can actually run `R `from the command line:
+Did you know you can actually run `R `from the command line:
 
 ```{bash, eval=FALSE, echo=TRUE}
 R    # (ctrl + D to get out of it)
@@ -53,11 +51,14 @@ Or an R script:
 Rscript 10min-loop.R   # (ctrl + C to kill the process)
 ```
 
-And yes you can run `python` as well: 
+And yes, you can run `python` as well: 
 
 ```{bash, eval=FALSE, echo=TRUE}
 python   # (ctrl + D to get out of it)
 ```
+
+
+But this is for next week  🙂
 
 <hr>
 
