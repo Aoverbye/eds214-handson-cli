@@ -32,6 +32,9 @@ cd cli_intro
 
 # Download the qmd from GitHub
 wget https://raw.githubusercontent.com/brunj7/eds214-handson-cli/main/cli_handson-files.qmd
+
+# Do a check that it works
+ls -F.   # What does `-F` do!?
 ```
 
 
@@ -137,9 +140,10 @@ Your should end up with something like this:
 ```
 
 
-### Bonus
+### Bonuses
 
 - add a text file `data_listing.txt` in the `data` folder that lists all the files in it
+- add a text file `
 
 
 
