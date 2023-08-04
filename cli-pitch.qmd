@@ -20,6 +20,7 @@ mkdir Github
 cd Github
 git clone "https://github.com/brunj7/eds214-handson-cli.git"
 cd eds214-handson-cli
+ls
 cd babynamesbystate
 pwd
 
@@ -30,6 +31,10 @@ ls *.TXT | wc -l
 # Look at the files
 head CA.TXT
 tail CA.TXT
+
+# Want to know the most frequent ones over all the years?
+sort -k5 -n -t"," CA.TXT | tail
+
 
 # Concatenate the files
 touch baby_allstates.csv     # create an empty file
