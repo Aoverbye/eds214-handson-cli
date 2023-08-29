@@ -78,7 +78,7 @@ Let's keep going!!
 # brun@taylor:~$ cd ~/cli_intro
 # brun@taylor:~/cli_intro$ wget https://aurora.nceas.ucsb.edu/~brun/sampledata.zip
 # brun@taylor:~/cli_intro$ ls
-# brun@taylor:~/cli_intro$ unzip sampledata.zip .
+# brun@taylor:~/cli_intro$ unzip sampledata.zip
 # brun@taylor:~/cli_intro$ tree .
 
 ```
