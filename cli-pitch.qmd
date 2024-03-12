@@ -21,7 +21,7 @@ cd github
 git clone "https://github.com/brunj7/eds214-handson-cli.git"
 cd eds214-handson-cli
 ls
-cd babynamesbystate
+cd _data/babynamesbystate
 pwd
 
 # Do I have all the states?
