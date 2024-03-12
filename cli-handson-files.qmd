@@ -31,7 +31,7 @@ mkdir cli_intro
 cd cli_intro
 
 # Download the qmd from GitHub
-wget https://raw.githubusercontent.com/brunj7/eds214-handson-cli/main/cli-handson-files.qmd
+curl --output cli-handson-files.qmd https://raw.githubusercontent.com/brunj7/eds214-handson-cli/main/cli-handson-files.qmd
 
 # Do a check that it works
 ls -F.   # What does `-F` do!?
@@ -63,7 +63,7 @@ Let's keep going!!
 
 ```{bash, eval=FALSE, echo=TRUE}
 # brun@taylor:~$ cd ~
-# brun@taylor:~$ wget https://aurora.nceas.ucsb.edu/~brun/10min-loop.R
+# brun@taylor:~$ curl --output 10min-loop.R https://aurora.nceas.ucsb.edu/~brun/10min-loop.R
 
 ```
 
@@ -76,7 +76,7 @@ Let's keep going!!
 
 ```{bash, eval=FALSE, echo=TRUE}
 # brun@taylor:~$ cd ~/cli_intro
-# brun@taylor:~/cli_intro$ wget https://aurora.nceas.ucsb.edu/~brun/sampledata.zip
+# brun@taylor:~/cli_intro$ curl --output sampledata.zip https://aurora.nceas.ucsb.edu/~brun/sampledata.zip 
 # brun@taylor:~/cli_intro$ ls
 # brun@taylor:~/cli_intro$ unzip sampledata.zip 
 # brun@taylor:~/cli_intro$ tree .
