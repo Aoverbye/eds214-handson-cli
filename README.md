@@ -2,7 +2,6 @@
 
 1. Why should I care? I know R and Python! [the pitch](https://eds-214.github.io/eds214-handson-cli/cli-pitch.html)
 2. Navigating and manipulating files [practice](https://eds-214.github.io/eds214-handson-cli/cli-handson-files.html)
-3. A little more about the cool stuff you can do
 
 
 <br>
