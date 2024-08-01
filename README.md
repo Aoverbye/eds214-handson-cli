@@ -4,7 +4,7 @@
 2. Navigating and manipulating files [practice](https://eds-214.github.io/eds214-handson-cli/cli-handson-files.html)
 3. A little more about the cool stuff you can do
 
-https://eds-214.github.io/eds214-handson-cli/
+
 <br>
 
 ---
