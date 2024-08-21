@@ -33,7 +33,7 @@ head CA.TXT
 tail CA.TXT
 
 # Want to know the most frequent ones over all the years?
-sort -k5 -n -t"," CA.TXT | tail
+sort -k5 -n -t "," CA.TXT | tail
 
 
 # Concatenate the files
