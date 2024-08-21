@@ -24,17 +24,21 @@ ls
 cd _data/babynamesbystate
 pwd
 
-# Do I have all the states?
+# List all the TXT files
 ls *.TXT
-ls *.TXT | wc -l
+
+# Do I have all the states?
+ls *.TXT | wc -l  # wait whaaaht!? you can pipe!
 
 # Look at the files
 head CA.TXT
 tail CA.TXT
 
 # Want to know the most frequent ones over all the years?
-sort -k5 -n -t "," CA.TXT | tail
+sort -k5 -n -t "," CA.TXT 
 
+# A little long, but wait remeber you can pipe things!
+sort -k5 -n -t "," CA.TXT | tail
 
 # Concatenate the files
 touch baby_allstates.csv     # create an empty file
