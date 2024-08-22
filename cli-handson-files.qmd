@@ -9,14 +9,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Files and directories
 
 In the following code examples, you need to type the command, but not include 
-the command prompt (e.g., `brun@taylor:~$`) which just shows that the computer 
+the command prompt (e.g., `brun@workbench-1:~$`) which just shows that the computer 
 is ready to accept a command.
 
 ### Setup
 
 Let's start by downloading the quarto document from GitHub so you can save your commands in it:
 
-- create a `cli_intro` directory in your home directory on Taylor
+- create a `cli_intro` directory in your home directory on workbench-1
 - download the qmd file 
 
 
@@ -45,7 +45,7 @@ Let's keep going!!
 - Show the contents of that file using `cat` (concatenate)
 
 ```{bash, eval=FALSE, echo=TRUE}
-# brun@taylor:~$ cd ~/cli_intro
+# brun@workbench-1:~$ cd ~/cli_intro
 
 ```
 
@@ -54,7 +54,7 @@ Let's keep going!!
 
 #### Get a file from a remote server
 
-- download the file `10min-loop.R` to your home directory on Taylor
+- download the file `10min-loop.R` to your home directory on workbench-1
 - create directory `code` inside your `cli_intro` folder
 - move `mv` this file to your `cli_intro` directory
 - list the files in the directory with `ls` (list)
@@ -62,8 +62,8 @@ Let's keep going!!
 - get an overview of the directory contents using `tree`
 
 ```{bash, eval=FALSE, echo=TRUE}
-# brun@taylor:~$ cd ~
-# brun@taylor:~$ curl --output 10min-loop.R https://aurora.nceas.ucsb.edu/~brun/10min-loop.R
+# brun@workbench-1:~$ cd ~
+# brun@workbench-1:~$ curl --output 10min-loop.R https://aurora.nceas.ucsb.edu/~brun/10min-loop.R
 
 ```
 
@@ -71,15 +71,15 @@ Let's keep going!!
 
 #### Try with a folder: 
 
-- download the data to Taylor from https://aurora.nceas.ucsb.edu/~brun/sampledata.zip
+- download the data to workbench-1 from https://aurora.nceas.ucsb.edu/~brun/sampledata.zip
 - unzip the folder
 
 ```{bash, eval=FALSE, echo=TRUE}
-# brun@taylor:~$ cd ~/cli_intro
-# brun@taylor:~/cli_intro$ curl --output sampledata.zip https://aurora.nceas.ucsb.edu/~brun/sampledata.zip 
-# brun@taylor:~/cli_intro$ ls
-# brun@taylor:~/cli_intro$ unzip sampledata.zip 
-# brun@taylor:~/cli_intro$ tree .
+# brun@workbench-1:~$ cd ~/cli_intro
+# brun@workbench-1:~/cli_intro$ curl --output sampledata.zip https://aurora.nceas.ucsb.edu/~brun/sampledata.zip 
+# brun@workbench-1:~/cli_intro$ ls
+# brun@workbench-1:~/cli_intro$ unzip sampledata.zip 
+# brun@workbench-1:~/cli_intro$ tree .
 
 ```
 
@@ -88,7 +88,7 @@ Let's keep going!!
 Your should end up with something like this:
 
 ```bash
-# brun@taylor:~/cli_intro$ tree
+# brun@workbench-1:~/cli_intro$ tree
 .
 ├── code
 │   └── 10min-loop.R
@@ -119,7 +119,7 @@ Now, let's organize those data!!
 Your should end up with something like this:
 
 ```bash
-# brun@taylor:~/cli_intro$ tree
+# brun@workbench-1:~/cli_intro$ tree
 .
 ├── code
 │   └── 10min-loop.R
