@@ -56,7 +56,7 @@ Let's keep going!!
 
 - download the file `10min-loop.R` to your home directory on workbench-1
 - create directory `code` inside your `cli_intro` folder
-- move `mv` this file to your `cli_intro` directory
+- move `mv` this file to your `cli_intro/code` directory
 - list the files in the directory with `ls` (list)
 - look where we are in the filesystem using `pwd` (print working directory)
 - get an overview of the directory contents using `tree`
